@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "passport-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "http://github.com/dragonprojects/passport-skeleton",
+  "author": {
+    "name": "Sharaal",
+    "email": "developer@dragonprojects.de",
+    "url": "http://dragonprojects.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragonprojects/passport-skeleton.git"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "develop": "nodemon src/web.js",
+    "start": "node src/web.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2"
+  },
+  "engines": {
+    "node": "^6.7.0"
+  }
+}
