@@ -1,7 +1,8 @@
 require('dotenv').config({ silent: true });
 
-const ensureLoggedIn = require('./middlewares/ensureLoggedIn')();
-const ensureLoggedOut = require('./middlewares/ensureLoggedOut')();
+const connectEnsureLogin = require('connect-ensure-login');
+const ensureLoggedIn = connectEnsureLogin.ensureLoggedIn();
+const ensureLoggedOut = connectEnsureLogin.ensureLoggedOut();
 
 const User = require('./models/User')();
 
