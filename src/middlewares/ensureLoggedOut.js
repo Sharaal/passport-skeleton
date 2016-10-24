@@ -1,3 +1,1 @@
-'use strict';
-
-module.exports = require('connect-ensure-login').ensureLoggedOut();
+module.exports = () => require('connect-ensure-login').ensureLoggedOut();
